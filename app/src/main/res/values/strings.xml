@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">MusicFission</string>
+
+    <string name="titleSong">Title</string>
+    <string name="artistSong">Artist</string>
+    <string name="mainTitleSong" />
+    <string name="mainArtistSong"/>
+    <string name="timeSong">00:00</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="titlePlaylist">Liked</string>
+    <string name="number">0.</string>
+    <string name="playNext">Play Next</string>
+    <string name="playNextShuffle">(Shuffle)Play Next</string>
+    <string name="addToPlaylist">Add to Playlist</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_playlist_name">New Playlist Name</string>
+    <string name="add_end">Add to the End</string>
+    <string name="add_end_shuffle">(Shuffle)Add to the End</string>
+    <string name="select_playlist">Select a playlist:</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="artist">Artist</string>
+    <string name="title_album">Title Album</string>
+    <string name="albums">Albums</string>
+    <string name="subscribers">Subscribers:</string>
+    <string name="_21k">21K</string>
+    <string name="views">Views:</string>
+    <string name="_14_504_607">14,504,607</string>
+    <string name="more">More</string>
+    <string name="songs">Songs</string>
+    <string name="videos">Videos</string>
+    <string name="related">Related</string>
+    <string name="playlist">PLAYLIST</string>
+    <string name="nothing_to_see_here_yet">Nothing to see here… yet</string>
+    <string name="page_loading_error">Page loading error!</string>
+    <string name="welcome_to_the">Welcome to the</string>
+    <string name="musicfission">MusicFission</string>
+    <string name="make_your_first_search">Make your first search</string>
+    <string name="listen_again">Listen again</string>
+    <string name="your_artists">Your artists</string>
+    <string name="similar_songs">Similar songs</string>
+    <string name="library">Library</string>
+    <string name="_3_25">3:25</string>
+    <string name="related_artists">Related Artists</string>
+    <string name="album">Album</string>
+    <string name="request">request</string>
+    <string name="title">Title</string>
+    <string name="liked">Liked</string>
+    <string name="author">Author:</string>
+    <string name="you">You</string>
+    <string name="_0">0</string>
+    <string name="tracks">tracks</string>
+    <string name="delete_playlist">Delete Playlist</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="download">Download</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="downloads">Downloads</string>
+    <string name="downloading">Downloading…</string>
+    <string name="loading_error">Loading error!</string>
+    <string name="successful_download">Successful download!</string>
+    <string name="queue">Queue…</string>
+    <string name="your_downloads_will_be_here">Your downloads will be here</string>
+    <string name="artists">Artists</string>
+    <string name="playlists">Playlists</string>
+    <string name="download_process">Download</string>
+    <string name="downloading_is_complete">Downloading is complete!</string>
+    <string name="download_error">Download error!</string>
+    <string name="added_to_the_end">Added to the end</string>
+    <string name="will_be_played_next">Will be played next</string>
+    <string name="added_to_the_end_shuffled">Added to the end shuffled</string>
+    <string name="will_be_played_next_shuffled">Will be played next shuffled</string>
+    <string name="added_to_playlist">Added to playlist</string>
+    <string name="playlist_saved_successfully">Playlist saved successfully!</string>
+    <string name="playlist_removed_successfully">Playlist removed successfully!</string>
+    <string name="start_downloading">Start downloading…</string>
+    <string name="you_cannot_rename_this_playlist">You cannot rename this playlist!</string>
+    <string name="error_text_is_empty">Error! Text is empty!</string>
+    <string name="you_have_successfully_subscribed">You have successfully subscribed!</string>
+    <string name="you_have_successfully_unsubscribed">You have successfully unsubscribed!</string>
+    <string name="the_request_is_too_short">The request is too short</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="download_folder">Download folder</string>
+    <string name="no_access_to_folder">No access to folder!</string>
+    <string name="back">Back</string>
+    <string name="line">Line</string>
+    <string name="new_playlist">New Playlist</string>
+    <string name="repeat">Repeat</string>
+    <string name="image">Image</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="rename">Rename</string>
+    <string name="add">Add</string>
+    <string name="seek_bar">Seek Bar</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Ukrainian</item>
+    </string-array>
+</resources>

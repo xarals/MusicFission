@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.xaral.musicfission.ui.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_search"
+            app:destination="@id/navigation_search"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_in_right"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_library"
+            app:destination="@id/navigation_library"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_in_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.xaral.musicfission.ui.SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <argument
+            android:name="searchText"
+            app:argType="string" />
+        <argument
+            android:name="topResult"
+            app:argType="string" />
+        <argument
+            android:name="isResponse"
+            app:argType="boolean" />
+        <argument
+            android:name="artistsList"/>
+        <argument
+            android:name="playlistsList"/>
+        <argument
+            android:name="albumsList"/>
+        <argument
+            android:name="songsList"/>
+        <argument
+            android:name="videosList"/>
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_library"
+            app:destination="@id/navigation_library"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_in_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.xaral.musicfission.ui.LibraryFragment"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_navigation_library_to_navigation_search"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_navigation_library_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_downloads"
+        android:name="com.xaral.musicfission.ui.DownloadsFragment"
+        tools:layout="@layout/fragment_downloads" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.xaral.musicfission.ui.SettingsFragment"
+        tools:layout="@layout/fragment_settings" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_artist"
+        android:name="com.xaral.musicfission.ui.ArtistFragment"
+        tools:layout="@layout/fragment_artist">
+        <argument
+            android:name="artistId"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="artistName"
+            app:argType="string" />
+        <argument
+            android:name="subscribers"
+            app:argType="string" />
+        <argument
+            android:name="views"
+            app:argType="string" />
+        <argument
+            android:name="relatedList"/>
+        <argument
+            android:name="albumsList"/>
+        <argument
+            android:name="songsList"/>
+        <argument
+            android:name="videosList"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_album"
+        android:name="com.xaral.musicfission.ui.AlbumFragment"
+        tools:layout="@layout/fragment_album">
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <argument
+            android:name="artist"
+            app:argType="string"/>
+        <argument
+            android:name="artistId"
+            app:argType="string"/>
+        <argument
+            android:name="image"
+            app:argType="string"/>
+        <argument
+            android:name="browseId"
+            app:argType="string"/>
+        <argument
+            android:name="songsList"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_playlist"
+        android:name="com.xaral.musicfission.ui.PlaylistFragment"
+        tools:layout="@layout/fragment_playlist">
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <argument
+            android:name="author"
+            app:argType="string"/>
+        <argument
+            android:name="image"
+            app:argType="string"/>
+        <argument
+            android:name="browseId"
+            app:argType="string"/>
+        <argument
+            android:name="videosList"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_save_playlist"
+        android:name="com.xaral.musicfission.ui.SavePlaylistFragment"
+        tools:layout="@layout/fragment_save_playlist">
+        <argument
+            android:name="title"
+            app:argType="string"/>
+        <argument
+            android:name="author"
+            app:argType="string"/>
+        <argument
+            android:name="image"
+            app:argType="string"/>
+        <argument
+            android:name="browseId"
+            app:argType="string"/>
+        <argument
+            android:name="songsList"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_related_artists"
+        android:name="com.xaral.musicfission.ui.RelatedArtistsFragment"
+        tools:layout="@layout/fragment_related">
+        <argument
+            android:name="artists"
+            app:argType="string[]"/>
+        <argument
+            android:name="ids"
+            app:argType="string[]"/>
+        <argument
+            android:name="subscribers"
+            app:argType="string[]"/>
+        <argument
+            android:name="images"
+            app:argType="string[]"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_songs"
+        android:name="com.xaral.musicfission.ui.SongsFragment"
+        tools:layout="@layout/fragment_songs">
+        <argument
+            android:name="titles"
+            app:argType="string[]"/>
+        <argument
+            android:name="artists"
+            app:argType="string[]"/>
+        <argument
+            android:name="artistids"
+            app:argType="string[]"/>
+        <argument
+            android:name="uris"
+            app:argType="string[]"/>
+        <argument
+            android:name="images"
+            app:argType="string[]"/>
+        <argument
+            android:name="durations"
+            app:argType="long[]"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_videos"
+        android:name="com.xaral.musicfission.ui.VideosFragment"
+        tools:layout="@layout/fragment_videos">
+        <argument
+            android:name="titles"
+            app:argType="string[]"/>
+        <argument
+            android:name="artists"
+            app:argType="string[]"/>
+        <argument
+            android:name="artistids"
+            app:argType="string[]"/>
+        <argument
+            android:name="uris"
+            app:argType="string[]"/>
+        <argument
+            android:name="images"
+            app:argType="string[]"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_albums"
+        android:name="com.xaral.musicfission.ui.AlbumsFragment"
+        tools:layout="@layout/fragment_albums">
+        <argument
+            android:name="titles"
+            app:argType="string[]"/>
+        <argument
+            android:name="artists"
+            app:argType="string[]"/>
+        <argument
+            android:name="artistids"
+            app:argType="string[]"/>
+        <argument
+            android:name="browseIds"
+            app:argType="string[]"/>
+        <argument
+            android:name="years"
+            app:argType="string[]"/>
+        <argument
+            android:name="images"
+            app:argType="string[]"/>
+    </fragment>
+</navigation>

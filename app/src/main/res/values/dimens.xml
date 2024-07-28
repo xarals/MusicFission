@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="playerHiddenHeight">70dp</dimen>
+    <dimen name="playlistHiddenHeight">55dp</dimen>
+    <dimen name="artistTitleHeight">100dp</dimen>
+    <dimen name="albumTitleHeight">270dp</dimen>
+    <dimen name="image_width">300dp</dimen>
+    <dimen name="min_height">50dp</dimen>
+    <dimen name="big_radius">20dp</dimen>
+    <dimen name="small_radius">4dp</dimen>
+    <dimen name="big_margin">-340dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="song_height">300dp</dimen>
+    <dimen name="video_height">170dp</dimen>
+</resources>

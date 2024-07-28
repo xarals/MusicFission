@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="100dp"
+                android:width="100dp"/>
+            <gradient android:startColor="#3086AC"
+                android:endColor="#D51F93"
+                android:angle="315"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_search_white_24dp"
+        android:width="75dp"
+        android:height="75dp"
+        android:gravity="center"/>
+</layer-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+            <size android:height="100dp" android:width="100dp"/>
+            <gradient android:startColor="#CE88BC"
+                android:centerColor="#415793"
+                android:endColor="#023029"
+                android:angle="315"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/button_favorite_white_24dp"
+        android:width="70dp"
+        android:height="70dp"
+        android:gravity="center">
+    </item>
+</layer-list>
